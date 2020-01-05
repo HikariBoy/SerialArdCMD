@@ -16,7 +16,7 @@ X - Stop Data Logging<br>
 V - Verbose mode<br>
 S - Silent mode (no labels on data)</b><br>
 
-Users should (edit the first line of the .ino file)[./SerialArdCMD/SerialArdCMD.ino] to indicate the function of their code and the VERSION number (edit the <code>#define VERSION</code> line in the code).   Please keep an acknowledge of my original contribution in the source code. Keeping track of version numbers from the splash screen is an important way to track your code development.  Each of the letters used for the commands defines a condition within the <code>switch</code> statement within the <code> void loop()</code>.  Edit these letters to best represent the functions you desire.
+Users should [edit the first line of the .ino file](./SerialArdCMD/SerialArdCMD.ino) to indicate the function of their code and the VERSION number (edit the <code>#define VERSION</code> line in the code).   Please keep an acknowledge of my original contribution in the source code. Keeping track of version numbers from the splash screen is an important way to track your code development.  Each of the letters used for the commands defines a condition within the <code>switch</code> statement within the <code> void loop()</code>.  Edit these letters to best represent the functions you desire.
 
 Commands sent can be either lower or upper case (case is ignored) and all commands can be terminated with either a newline, carriage return or the symbol <code>;</code>. Using the separator <code>;</code> allows multiple commands to be sent to the Arduino for sequential execution, for example v;l;h1;i55.5;x;  which would (in the following order
 * enter verbose mode
