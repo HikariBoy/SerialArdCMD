@@ -99,7 +99,7 @@ void TurnLEDoff() {
 void splash (void) {
   Serial.print(F("Data Logging ................. By Adrian Keating (C) 2017, VERSION:"));
   Serial.println (VERSION, 2);
-  Serial.println(F("Command Set (use either upper orlower case, commands with numbers end in x or CR):"));
+  Serial.println(F("Command Set (use either upper orlower case, commands with numbers end in ; or CR):"));
   Serial.println(F("? - Help"));
   Serial.println(F("In - Function requiring float input, x.x=float"));
   Serial.println(F("Hx - Function requiring integer input, n=integer, n=0: turn LED off, n=0:turn LED on"));
