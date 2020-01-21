@@ -1,4 +1,4 @@
-# Serial Interface for the Arduino with floating number support  
+# Serial Interface for the Arduino with floating-point number support  
  <b>Summary</b>:Arduino Serial Interface that supports a command line interface with floating point numeric data support<br>
  SERIAL BAUD RATE: 9600
  ## Scope
