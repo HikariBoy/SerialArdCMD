@@ -30,7 +30,7 @@ This would then send to the serial monitor:<br>
 Float = 55.500<br>
 Time(s)= 0.05 </code><br>
  where the Time indicates the time taken for this loop to run.
- 
+
 An important addition here is the support for float (and integers by recasting into int) using the <code>ReturnFloat()</code> function.  This function:
 * allows floating point number by entering a number with a decimal point.  Exponent format is not yet supported, for example in the above, I55.5  calls the 'I' switch statement and set the <code> myfloat</code> variable to 55.5.  This could then be used in the code for various functions, allowing the interface to change parameters within the code (or EEPROM) as required.  For example, I can control the current applied to a laser diode through this interface.
 * allows for white spaces before the number. For example, the above command could have been issued as I55.5 or I 55.5 or I  55.5
@@ -44,4 +44,3 @@ An important addition here is the support for float (and integers by recasting i
 <b>l</b> - start loggin (or what ever function is place in the <code>logdata()</code> function)<br>
 <b>?</b> - prints out the splash screen (instructions for the commands and the version number)<br>
 <b>x</b> - entering x stops data logging or whatever routine is set to run in the loop.  With Verbose on, this command returns the time taken since the ‘l’ command was given to start the logging (or loop).  Continuing to send the 'x' command reports the new time since the logging/loop command was given.  Note however the actual logging/loop was stopped after the first issue of the 'x' command.<br>
-
