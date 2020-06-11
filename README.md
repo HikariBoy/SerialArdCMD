@@ -1,4 +1,4 @@
-# Serial Interface for the Arduino with floating number support  
+# Serial Interface for the Arduino with floating-point number support  
  <b>Summary</b>:Arduino Serial Interface that supports a command line interface with floating point numeric data support<br>
  SERIAL BAUD RATE: 9600
  ## Scope
@@ -6,7 +6,7 @@ This project was designed to provide more flexibility to the Arduino after the f
 
 At start up (and when the splash screen is invoke by typing '?') the following appears<br>
 <b> Data Logging ................. By [Adrian Keating](http://www.web.uwa.edu.au/person/adrian.keating) (C) 2017, VERSION:1.00<br>
-Command Set (use either upper or lower case, commands with numbers end in x or CR):<br>
+Command Set (use either upper or lower case, commands with numbers end in ; or CR):<br>
 ? - Help<br>
 In - Function requiring float input, x.x=float<br>
 Hx - Function requiring integer input, n=integer, n=0: turn LED off, n=0:turn LED on<br>
